@@ -13,11 +13,11 @@ return new class extends Migration
     {
         Schema::create('report_a_problem', function (Blueprint $table) {
             $table->id();
-            $table->timestamps();
             $table->string('problem_name');
-            $table->string('img');
-            $table->string('details');
-            $table->string('location');
+            $table->string('p_img');
+            $table->string('p_details');
+            $table->string('p_location');
+            $table->timestamps();
             
         });
     }

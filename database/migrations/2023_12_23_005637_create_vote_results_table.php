@@ -13,9 +13,10 @@ return new class extends Migration
     {
         Schema::create('vote_results', function (Blueprint $table) {
             $table->id();
+            $table->int('agree');
+            $table->int('disagree');
+            $table->int('vort_count');
             $table->timestamps();
-            $table->string('agree');
-            $table->string('disagree');
         });
     }
 

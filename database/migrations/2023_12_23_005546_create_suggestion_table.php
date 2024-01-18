@@ -13,9 +13,9 @@ return new class extends Migration
     {
         Schema::create('suggestion', function (Blueprint $table) {
             $table->id();
-            $table->timestamps();
             $table->string('topic_name');
-            $table->string('details');
+            $table->string('s_details');
+            $table->timestamps();
         });
     }
 
