@@ -14,9 +14,9 @@ class SuggestionSeeder extends Seeder
     public function run(): void
     {
         DB::table('suggestion') -> insert ([
-            ['topic_name' => '',
-             's_datail' => '',
-             ''],
+            ['topic_name' => 'อยากได้เเป้นบาส',
+             's_detail' => 'รร.ทุ่งม่วง เพื่อให้เยาวชนได้ออกกำลังกายเเละหลีกเลี่ยงอยาเสพติด',
+            ],
         ]);
     }
 }
